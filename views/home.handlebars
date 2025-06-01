@@ -1,0 +1,13 @@
+<ul>
+  {{#each ListaDeProdutos}}
+    <li>
+      <strong>Produto:</strong>
+      <span>{{this.produto}}</span>
+      <strong>Preço:</strong>
+      <span>{{this.preco}}</span>
+      <strong>Estoque:</strong>
+      <span>{{this.estoque}} unidades</span>
+      <a href="/products/{{this.id}}">Ver detalhes</a>
+    </li>
+  {{/each}}
+</ul>
